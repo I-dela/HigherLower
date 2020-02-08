@@ -12,7 +12,7 @@
         android:layout_width="220dp"
         android:layout_height="248dp"
         android:src="@drawable/dice1"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/equals"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,13 +33,13 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="136dp"
         android:text="@string/lastThrow"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/equals"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/lower"
         android:layout_width="123dp"
         android:layout_height="52dp"
         android:layout_marginStart="16dp"
@@ -48,17 +48,17 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/equals"
         android:layout_width="123dp"
         android:layout_height="52dp"
         android:text="@string/buttonCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/higher"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toEndOf="@+id/button" />
+        app:layout_constraintStart_toEndOf="@+id/lower" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/higher"
         android:layout_width="114dp"
         android:layout_height="54dp"
         android:layout_marginEnd="16dp"
