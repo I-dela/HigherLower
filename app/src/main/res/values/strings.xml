@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Logica App Kotlin</string>
+    <string name="exampleA">A</string>
+    <string name="conjuction_and">Conjuction (AND)</string>
+    <string name="exampleB">B</string>
+    <string name="exampleAB">A ^ B</string>
+    <string name="row1C1">T</string>
+    <string name="row2C1">T</string>
+    <string name="row3C1">F</string>
+    <string name="row1C2">T</string>
+    <string name="row2C2">F</string>
+    <string name="row3C2">T</string>
+    <string name="row4C2">F</string>
+    <string-array name="choice_array">
+        <item>T</item>
+        <item>F</item>
+    </string-array>
+</resources>
