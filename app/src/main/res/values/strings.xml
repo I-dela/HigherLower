@@ -11,8 +11,5 @@
     <string name="row2C2">F</string>
     <string name="row3C2">T</string>
     <string name="row4C2">F</string>
-    <string-array name="choice_array">
-        <item>T</item>
-        <item>F</item>
-    </string-array>
+    <string name="subitButton">Submit</string>
 </resources>
