@@ -202,8 +202,8 @@
 
     <TextView
         android:id="@+id/choice2"
-        android:layout_width="26dp"
-        android:layout_height="35dp"
+        android:layout_width="60dp"
+        android:layout_height="39dp"
         app:layout_constraintBottom_toBottomOf="@+id/spinner2"
         app:layout_constraintEnd_toEndOf="@+id/spinner2"
         app:layout_constraintHorizontal_bias="0.205"
@@ -213,8 +213,8 @@
 
     <TextView
         android:id="@+id/choice3"
-        android:layout_width="26dp"
-        android:layout_height="35dp"
+        android:layout_width="60dp"
+        android:layout_height="39dp"
         app:layout_constraintBottom_toBottomOf="@+id/spinner3"
         app:layout_constraintEnd_toEndOf="@+id/spinner3"
         app:layout_constraintHorizontal_bias="0.205"
@@ -224,8 +224,8 @@
 
     <TextView
         android:id="@+id/choice4"
-        android:layout_width="26dp"
-        android:layout_height="35dp"
+        android:layout_width="60dp"
+        android:layout_height="39dp"
         app:layout_constraintBottom_toBottomOf="@+id/spinner4"
         app:layout_constraintEnd_toEndOf="@+id/spinner4"
         app:layout_constraintHorizontal_bias="0.205"

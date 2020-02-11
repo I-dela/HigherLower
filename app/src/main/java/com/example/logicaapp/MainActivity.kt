@@ -11,14 +11,12 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     // array of answers you can give
-    private val listOfChoices = arrayOf("T", "F")
+    private val listOfChoices = arrayOf("Choose..","T", "F")
 
     // Total points you get by answering the questions correctly
     private var points: Int = 0
 
-
-    private var userSelect = false
-
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -36,6 +34,7 @@ class MainActivity : AppCompatActivity() {
 
         // Create an ArrayAdapter using the string array and a default spinner layout
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, listOfChoices)
+
         // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         // Apply the adapter to the spinner
@@ -57,10 +56,7 @@ class MainActivity : AppCompatActivity() {
             spinnerTo.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
 
                 override fun onNothingSelected(parent: AdapterView<*>?) {
-                    choice1.text = "?"
-                    choice2.text = "?"
-                    choice3.text = "?"
-                    choice4.text = "?"
+
                 }
 
                 override fun onItemSelected(
@@ -75,31 +71,31 @@ class MainActivity : AppCompatActivity() {
                             //Do nothing
                         }
 
-                        // kotlin equivalent of switch statment.
+                        // kotlin equivalent of switch statement.
                         // this when method checks which parent is called and changes the string outputted in the
                         //spinner dependend of the spinner used
                             when (parent) {
                                 spinner -> {
                                     choice1.text = listOfChoices[position]
-                                    if (listOfChoices[position] == "T") {
+                                    if (choice1.text == "T") {
                                         points++
                                     }
                                 }
                                 spinner2 -> {
                                     choice2.text = listOfChoices[position]
-                                    if (listOfChoices[position] == "F") {
+                                    if (choice2.text == "F") {
                                         points++
                                     }
                                 }
                                 spinner3 -> {
                                     choice3.text = listOfChoices[position]
-                                    if (listOfChoices[position] == "F") {
+                                    if (choice3.text == "F") {
                                         points++
                                     }
                                 }
                                 spinner4 -> {
                                     choice4.text = listOfChoices[position]
-                                    if (listOfChoices[position] == "F") {
+                                    if (choice4.text == "F") {
                                         points++
                                     }
                                 }
