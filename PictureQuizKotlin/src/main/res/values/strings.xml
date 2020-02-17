@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Picture Quiz Kotlin</string>
+    <string name="desription">What kind of animal is this?!</string>
+    <string name="confirmButoon">Confirm</string>
+    <string name="inputGiraffePlaceholder">Species</string>
+    <string name="inputGiraffeAnswer">Giraffe</string>
+    <string name="inputGiraffeAnswerWithoutCapital">giraffe</string>
+    <string name="AnswerIsCorrect">Correct!</string>
+    <string name="AnswerIsWrong">Wrong!</string>
+</resources>
